@@ -1,0 +1,136 @@
+root@SATHISHKRISHNAN:~# touch sam{1..10}
+root@SATHISHKRISHNAN:~# mkdir don{1..10}
+root@SATHISHKRISHNAN:~# ls
+don1   don2  don4  don6  don8  guvi-task-round1  guvi-task-round3  sam10  sam3  sam5  sam7  sam9
+don10  don3  don5  don7  don9  guvi-task-round2  sam1              sam2   sam4  sam6  sam8
+root@SATHISHKRISHNAN:~# useradd guviuser
+root@SATHISHKRISHNAN:~# useradd zenuser
+root@SATHISHKRISHNAN:~# ls -al
+total 32
+drwx------ 2 root root    0 Jan 26 19:30 .
+drwxr-xr-x 2 root root    0 Jan  1  1970 ..
+-rw------- 1 root root 1068 Jan 26 07:36 .bash_history
+-rw-r--r-- 1 root root 3106 Feb 20  2014 .bashrc
+drwxrwxrwx 2 root root    0 Jan 26 19:30 don1
+drwxrwxrwx 2 root root    0 Jan 26 19:30 don10
+drwxrwxrwx 2 root root    0 Jan 26 19:30 don2
+drwxrwxrwx 2 root root    0 Jan 26 19:30 don3
+drwxrwxrwx 2 root root    0 Jan 26 19:30 don4
+drwxrwxrwx 2 root root    0 Jan 26 19:30 don5
+drwxrwxrwx 2 root root    0 Jan 26 19:30 don6
+drwxrwxrwx 2 root root    0 Jan 26 19:30 don7
+drwxrwxrwx 2 root root    0 Jan 26 19:30 don8
+drwxrwxrwx 2 root root    0 Jan 26 19:30 don9
+drwxrwxrwx 2 root root    0 Jan 25 22:40 .git
+drwxrwxrwx 2 root root    0 Jan 25 22:03 guvi-task-round1
+drwxrwxrwx 2 root root    0 Jan 25 23:10 guvi-task-round2
+drwxrwxrwx 2 root root    0 Jan 26 06:57 guvi-task-round3
+-rw-r--r-- 1 root root  140 Feb 20  2014 .profile
+-rw-rw-rw- 1 root root    0 Jan 26 19:30 sam1
+-rw-rw-rw- 1 root root    0 Jan 26 19:30 sam10
+-rw-rw-rw- 1 root root    0 Jan 26 19:30 sam2
+-rw-rw-rw- 1 root root    0 Jan 26 19:30 sam3
+-rw-rw-rw- 1 root root    0 Jan 26 19:30 sam4
+-rw-rw-rw- 1 root root    0 Jan 26 19:30 sam5
+-rw-rw-rw- 1 root root    0 Jan 26 19:30 sam6
+-rw-rw-rw- 1 root root    0 Jan 26 19:30 sam7
+-rw-rw-rw- 1 root root    0 Jan 26 19:30 sam8
+-rw-rw-rw- 1 root root    0 Jan 26 19:30 sam9
+root@SATHISHKRISHNAN:~# chown guviuser don{1..5} sam{1..5}
+root@SATHISHKRISHNAN:~# ls -al
+total 32
+drwx------ 2 root     root    0 Jan 26 19:30 .
+drwxr-xr-x 2 root     root    0 Jan  1  1970 ..
+-rw------- 1 root     root 1068 Jan 26 07:36 .bash_history
+-rw-r--r-- 1 root     root 3106 Feb 20  2014 .bashrc
+drwxrwxrwx 2 guviuser root    0 Jan 26 19:30 don1
+drwxrwxrwx 2 root     root    0 Jan 26 19:30 don10
+drwxrwxrwx 2 guviuser root    0 Jan 26 19:30 don2
+drwxrwxrwx 2 guviuser root    0 Jan 26 19:30 don3
+drwxrwxrwx 2 guviuser root    0 Jan 26 19:30 don4
+drwxrwxrwx 2 guviuser root    0 Jan 26 19:30 don5
+drwxrwxrwx 2 root     root    0 Jan 26 19:30 don6
+drwxrwxrwx 2 root     root    0 Jan 26 19:30 don7
+drwxrwxrwx 2 root     root    0 Jan 26 19:30 don8
+drwxrwxrwx 2 root     root    0 Jan 26 19:30 don9
+drwxrwxrwx 2 root     root    0 Jan 25 22:40 .git
+drwxrwxrwx 2 root     root    0 Jan 25 22:03 guvi-task-round1
+drwxrwxrwx 2 root     root    0 Jan 25 23:10 guvi-task-round2
+drwxrwxrwx 2 root     root    0 Jan 26 06:57 guvi-task-round3
+-rw-r--r-- 1 root     root  140 Feb 20  2014 .profile
+-rw-rw-rw- 1 guviuser root    0 Jan 26 19:30 sam1
+-rw-rw-rw- 1 root     root    0 Jan 26 19:30 sam10
+-rw-rw-rw- 1 guviuser root    0 Jan 26 19:30 sam2
+-rw-rw-rw- 1 guviuser root    0 Jan 26 19:30 sam3
+-rw-rw-rw- 1 guviuser root    0 Jan 26 19:30 sam4
+-rw-rw-rw- 1 guviuser root    0 Jan 26 19:30 sam5
+-rw-rw-rw- 1 root     root    0 Jan 26 19:30 sam6
+-rw-rw-rw- 1 root     root    0 Jan 26 19:30 sam7
+-rw-rw-rw- 1 root     root    0 Jan 26 19:30 sam8
+-rw-rw-rw- 1 root     root    0 Jan 26 19:30 sam9
+root@SATHISHKRISHNAN:~# chown zenuser don{6..10} sam{6..10}
+root@SATHISHKRISHNAN:~# ls -al
+total 32
+drwx------ 2 root     root    0 Jan 26 19:30 .
+drwxr-xr-x 2 root     root    0 Jan  1  1970 ..
+-rw------- 1 root     root 1068 Jan 26 07:36 .bash_history
+-rw-r--r-- 1 root     root 3106 Feb 20  2014 .bashrc
+drwxrwxrwx 2 guviuser root    0 Jan 26 19:30 don1
+drwxrwxrwx 2 zenuser  root    0 Jan 26 19:30 don10
+drwxrwxrwx 2 guviuser root    0 Jan 26 19:30 don2
+drwxrwxrwx 2 guviuser root    0 Jan 26 19:30 don3
+drwxrwxrwx 2 guviuser root    0 Jan 26 19:30 don4
+drwxrwxrwx 2 guviuser root    0 Jan 26 19:30 don5
+drwxrwxrwx 2 zenuser  root    0 Jan 26 19:30 don6
+drwxrwxrwx 2 zenuser  root    0 Jan 26 19:30 don7
+drwxrwxrwx 2 zenuser  root    0 Jan 26 19:30 don8
+drwxrwxrwx 2 zenuser  root    0 Jan 26 19:30 don9
+drwxrwxrwx 2 root     root    0 Jan 25 22:40 .git
+drwxrwxrwx 2 root     root    0 Jan 25 22:03 guvi-task-round1
+drwxrwxrwx 2 root     root    0 Jan 25 23:10 guvi-task-round2
+drwxrwxrwx 2 root     root    0 Jan 26 06:57 guvi-task-round3
+-rw-r--r-- 1 root     root  140 Feb 20  2014 .profile
+-rw-rw-rw- 1 guviuser root    0 Jan 26 19:30 sam1
+-rw-rw-rw- 1 zenuser  root    0 Jan 26 19:30 sam10
+-rw-rw-rw- 1 guviuser root    0 Jan 26 19:30 sam2
+-rw-rw-rw- 1 guviuser root    0 Jan 26 19:30 sam3
+-rw-rw-rw- 1 guviuser root    0 Jan 26 19:30 sam4
+-rw-rw-rw- 1 guviuser root    0 Jan 26 19:30 sam5
+-rw-rw-rw- 1 zenuser  root    0 Jan 26 19:30 sam6
+-rw-rw-rw- 1 zenuser  root    0 Jan 26 19:30 sam7
+-rw-rw-rw- 1 zenuser  root    0 Jan 26 19:30 sam8
+-rw-rw-rw- 1 zenuser  root    0 Jan 26 19:30 sam9
+root@SATHISHKRISHNAN:~# chmod 777 sam{1..5} don{1..5}
+root@SATHISHKRISHNAN:~# chmod 400 sam{6..10} don{6..10}
+root@SATHISHKRISHNAN:~# ls -al
+total 32
+drwx------ 2 root     root    0 Jan 26 19:30 .
+drwxr-xr-x 2 root     root    0 Jan  1  1970 ..
+-rw------- 1 root     root 1068 Jan 26 07:36 .bash_history
+-rw-r--r-- 1 root     root 3106 Feb 20  2014 .bashrc
+drwxrwxrwx 2 guviuser root    0 Jan 26 19:30 don1
+dr-------- 2 zenuser  root    0 Jan 26 19:30 don10
+drwxrwxrwx 2 guviuser root    0 Jan 26 19:30 don2
+drwxrwxrwx 2 guviuser root    0 Jan 26 19:30 don3
+drwxrwxrwx 2 guviuser root    0 Jan 26 19:30 don4
+drwxrwxrwx 2 guviuser root    0 Jan 26 19:30 don5
+dr-------- 2 zenuser  root    0 Jan 26 19:30 don6
+dr-------- 2 zenuser  root    0 Jan 26 19:30 don7
+dr-------- 2 zenuser  root    0 Jan 26 19:30 don8
+dr-------- 2 zenuser  root    0 Jan 26 19:30 don9
+drwxrwxrwx 2 root     root    0 Jan 25 22:40 .git
+drwxrwxrwx 2 root     root    0 Jan 25 22:03 guvi-task-round1
+drwxrwxrwx 2 root     root    0 Jan 25 23:10 guvi-task-round2
+drwxrwxrwx 2 root     root    0 Jan 26 06:57 guvi-task-round3
+-rw-r--r-- 1 root     root  140 Feb 20  2014 .profile
+-rwxrwxrwx 1 guviuser root    0 Jan 26 19:30 sam1
+-r-------- 1 zenuser  root    0 Jan 26 19:30 sam10
+-rwxrwxrwx 1 guviuser root    0 Jan 26 19:30 sam2
+-rwxrwxrwx 1 guviuser root    0 Jan 26 19:30 sam3
+-rwxrwxrwx 1 guviuser root    0 Jan 26 19:30 sam4
+-rwxrwxrwx 1 guviuser root    0 Jan 26 19:30 sam5
+-r-------- 1 zenuser  root    0 Jan 26 19:30 sam6
+-r-------- 1 zenuser  root    0 Jan 26 19:30 sam7
+-r-------- 1 zenuser  root    0 Jan 26 19:30 sam8
+-r-------- 1 zenuser  root    0 Jan 26 19:30 sam9
+root@SATHISHKRISHNAN:~#
